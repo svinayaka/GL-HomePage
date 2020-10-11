@@ -13,9 +13,6 @@
     .GL_Main_Form_Content {
         width: 45%;
     }
-    .GL_Video_Demo_Player {
-        width: 100%;
-    } 
     #GL_Outcome_Contents {
         display: flex;
         flex-direction: row-reverse;
