@@ -274,15 +274,6 @@ body {
     outline: none;
     border: none;
 }
-#GL_Video_Demo_Types_CC > .GL_Video_Demo_Types_Img{
-    /* background-image: url("./Images/curriculum.svg"); */
-} 
-#GL_Video_Demo_Types_PM > .GL_Video_Demo_Types_Img{
-    /* background-image: url("./Images/mentorship.svg"); */
-}
-#GL_Video_Demo_Types_DCA > .GL_Video_Demo_Types_Img{
-    /* background-image: url("./Images/career-assistance.svg"); */
-}
 .GL_Video_Demo_Types_Caption {
     margin-top: 1.5rem;
     font-weight: bold;
@@ -296,22 +287,10 @@ body {
     padding: 4rem var(--gl-common-padding);
 }
 #GL_Cirriculam_Header {
-    /* font-size: 1.8rem;
-    position: relative;
-    text-align: center;
-    font-size: calc(1.6vh + 1.6vw); */
     text-transform: uppercase;
 }
 #GL_Cirriculam_Header::after {
     border-color: var(--gl-border-color);
-    /* content: '';
-    position: absolute;
-    border-width: 2px;
-    border-style: solid;
-    width: calc(20vw);
-    left: 50%;
-    bottom: -10px;
-    transform: translateX(-50%); */
 }
 #GL_Cirriculam_Accordion {
     margin-top: 2rem;
@@ -362,22 +341,10 @@ body {
     background: var(--demo-bg-color);
 }
 #GL_Outcome_Header {
-    /* font-size: 1.8rem;
-    position: relative;
-    text-align: center;
-    font-size: calc(1.6vh + 1.6vw); */
     text-transform: uppercase;
 }
 #GL_Outcome_Header::after {
     border-color: var(--gl-border-color);
-    /* content: '';
-    position: absolute;
-    border-width: 2px;
-    border-style: solid;
-    width: calc(20vw);
-    left: 50%;
-    bottom: -10px;
-    transform: translateX(-50%); */
 }
 #GL_Outcome_Quotes {
     margin-top: 32px;
@@ -396,10 +363,6 @@ body {
 .GL_Outcome_Contents_Txt {
     font-weight: bold;
 }
-/* #GL_Outcome_Contents_Img {
-    width: 93%;
-    margin: 25px 4%;
-} */
 
 /* Testimonials Styles */
 #GL_Testimonials {
@@ -408,22 +371,10 @@ body {
     position: relative;
 }
 #GL_Testimonials_Header {
-    /* font-size: 1.8rem;
-    position: relative;
-    text-align: center;
-    font-size: calc(1.6vh + 1.6vw); */
     text-transform: uppercase;
 }
 #GL_Testimonials_Header::after {
     border-color: var(--gl-border-color);
-    /* content: '';
-    position: absolute;
-    border-width: 2px;
-    border-style: solid;
-    width: calc(20vw);
-    left: 50%;
-    bottom: -10px;
-    transform: translateX(-50%); */
 }
 #GL_Testimonials_Slides_Shows {
     margin-left: 10px;
