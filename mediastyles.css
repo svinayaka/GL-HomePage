@@ -7,9 +7,15 @@
     .GL_Main_Form_Fill {
         width: 45%;
     }
+    .GL_Video_Demo_Player {
+        width: 50%;
+    } 
     .GL_Main_Form_Content {
         width: 45%;
     }
+    .GL_Video_Demo_Player {
+        width: 100%;
+    } 
     #GL_Outcome_Contents {
         display: flex;
         flex-direction: row-reverse;
@@ -47,6 +53,9 @@
     .GL_Outcome_Contents_Img, .GL_Outcome_Contents_Box {
         width: 100%;
     }
+    .GL_Video_Demo_Player {
+        width: 100%;
+    } 
     .GL_Testimonials_Slides_LeftNav, .GL_Testimonials_Slides_RightNav {
         display: none;
     }
