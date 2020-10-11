@@ -1,0 +1,60 @@
+@media screen and (min-width: 780px) {
+    .GL_Main_Form {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }    
+    .GL_Main_Form_Fill {
+        width: 45%;
+    }
+    .GL_Main_Form_Content {
+        width: 45%;
+    }
+    #GL_Outcome_Contents {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .GL_Outcome_Contents_Img, .GL_Outcome_Contents_Box {
+        width: 50%;
+    }
+    .GL_Testimonials_Slide {
+        padding: 0px 90px;
+    }
+    .GL_Testimonials_Slides_LeftNav, .GL_Testimonials_Slides_RightNav {
+        position: absolute;
+        top: 110px;
+        cursor: pointer;
+    }
+    .GL_Testimonials_Slides_LeftNav {
+        float: left;
+        left: 0px;
+    } 
+    .GL_Testimonials_Slides_RightNav {
+        float: right;
+        right: 0px;
+        transform: rotate(180deg);
+    }
+    .GL_Testimonials_Slide_Dots {
+        display: none;
+    }
+    .GL_Footer_Txt {
+        display: inline-block;
+        margin: 14px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 779px) {
+    .GL_Outcome_Contents_Img, .GL_Outcome_Contents_Box {
+        width: 100%;
+    }
+    .GL_Testimonials_Slides_LeftNav, .GL_Testimonials_Slides_RightNav {
+        display: none;
+    }
+    .GL_Footer_Txt {
+        display: none;
+    }
+    
+    #GL_Video_Demo_Types  {
+        display: none;
+    }
+}

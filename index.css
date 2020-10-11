@@ -1,0 +1,543 @@
+:root {
+    --footer-bg-color : #261e91;
+    --bg-content-white-color : #f4f4f4;
+    --gl-common-padding: 4%;
+    --gl-text-color: white;
+    --gl-border-color: #1768e4;
+    --gl-border-gray-color: #b8bcc2;
+    
+    --form-border-color: #525253;
+    --form-bg-color: white;
+    --form-txt-color: black;
+    --form-border-input-color: #aaaaaa;
+    --form-border-input-label-color: #6e6e6e;
+    --form-apply-input-bg-color: #196ae5;
+    --form-apply-input-txt-color: white;
+
+    --demo-bg-color: white;
+    --demo-bg-circulam-cc-color: #f6d354;
+    --demo-bg-circulam-cc-border-color: #ffe159;
+    --demo-bg-circulam-pm-color: #45cffd;
+    --demo-bg-circulam-pm-border-color: #46d1ff;
+    --demo-bg-circulam-dca-color: #3baa8d;
+    --demo-bg-circulam-dca-border-color: #3eb396;
+
+    --cirriculam-bg-color: #ecf4ff;
+    --cirriculam-accordion-content-bg-color: white;
+    --cirriculam-accordion-hover-bg-color: #548de21f;
+
+    --testimonial-bots-bg-color: #4386de;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+input[type=checkbox] {
+    margin: 0px;
+}
+/* Common styles for componnents and page elements */
+body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    margin: 0px;
+    padding: 0px;
+}
+.GL_Button {
+    vertical-align: middle;
+    width: 160px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    height: 2.5rem;
+    cursor: pointer;
+}
+.GL_Common_HeaderStyle {
+    font-size: 1.8rem;
+    position: relative;
+    text-align: center;
+    font-size: calc(1.6vh + 1.6vw);
+}
+.GL_Common_HeaderStyle::after {
+    content: '';
+    position: absolute;
+    border-width: 2px;
+    border-style: solid;
+    width: calc(20vw);
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+/* This is entire page styles modification */
+.GL_Main {
+    height: 100%;
+    overflow: auto;
+}
+.GL_Main--Active {
+    height: calc(100% - 60px);
+    overflow: auto;
+}
+.GL_Main_Form {
+    padding: 1rem var(--gl-common-padding);
+    position: relative;
+}
+
+/* Top Layer Styles */
+#GL_TopLayer {
+    position: relative;
+    background-image: url('./Images/bg.jpg');
+    background-position: inherit;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#GL_TopLayer_BG {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #00000096;
+}
+#GL_Title {
+    position: relative;
+    padding: 32px var(--gl-common-padding);
+}
+
+/* This is Page Upper header section styles */
+#GL_Main_Form_Head {
+    background: transparent;
+    color: var(--gl-text-color);
+}
+#GL_Main_Form_Header {
+    display: inline-block;
+    text-align: center;
+}
+#GL_Main_Form_HeaderTxt, #GL_Main_Form_SubHeaderTxt {
+    color: var(--bg-content-white-color);
+}
+#GL_Main_Form_HeaderTxt {
+    font-size: 2rem;
+}
+/* This is form section styles */
+#GL_Main_Form_Fill {
+    background: var(--form-bg-color);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+#GL_Main_Form_Fill_Header {
+    /* font-size: 1.8rem;
+    position: relative;
+    text-align: center;
+    font-size: calc(1.6vh + 1.6vw); */
+    text-transform: uppercase;
+}
+#GL_Main_Form_Fill_Header::after {
+    border-color: var(--form-border-color);
+    /* content: '';
+    position: absolute;
+    border-width: 2px;
+    border-style: solid;
+    width: calc(20vw);
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%); */
+}
+#GL_Main_Form_Fill_Contents {
+    margin-top: 32px;
+}
+.GL_Main_Form_Fill_Input {
+    border-color: var(--form-border-input-color);
+    border-style: solid;
+    border-width: 1px;
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 4px;
+    padding: 6px;
+    margin: 10px 0px;
+}
+#GL_Main_Form_Fill_UserCheck {
+    margin-bottom: 1rem;
+    position: relative;
+    min-height: 20px;
+}
+#GL_Main_Form_Fill_CheckLabel {
+    color: var(--form-border-input-label-color);
+    display: inline-block;
+    width: calc(100% - 36px);
+    font-size: calc(100% - 4px);
+    float: left;
+    text-align: left;
+}
+#GL_Main_Form_Fill_Check {
+    display: inline-block;
+    vertical-align: top;
+    left: 0px;
+    top: 4px;
+    /* height: calc(1.1vh + 1.1vw); */
+    float: left;
+    width: calc(1.1vh + 1.1vw);
+    min-width: 12px;
+    min-height: 12px;
+    margin-right: 4px;
+}
+.GL_Button--bottomApply--formApply {
+    background: var(--form-apply-input-bg-color);
+    color: var(--form-apply-input-txt-color);
+    clear: both;
+}
+#GL_Main_Form_Content {
+    margin: 2rem 0px;
+    color:var(--gl-text-color);
+}
+#GL_Main_Form_Content_Header {
+    color: inherit;
+    margin: 2rem 0px;
+    font-size: calc(1.6vh + 1.6vw);
+}
+#GL_Main_Form_Content_SubHeader {
+    margin: 2rem 0px;
+    color: inherit;
+    position: relative;
+    padding-left: 1rem;
+    white-space: break-spaces;
+    font-size: calc(1.4vh + 1.4vw);
+}
+#GL_Main_Form_Content_SubHeader::before {
+    content: '';
+    border: 1px solid white;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    padding: 0px;
+}
+#GL_Main_Form_Content_MemberShip {
+    margin: 2rem 0px;
+    color:var(--gl-text-color);
+    font-size: calc(1.6vh + 1.6vw);
+}
+
+/* Demo Learning styles */
+#GL_Video_Demo {
+    background: var(--demo-bg-color);
+    padding: 4rem var(--gl-common-padding);
+    word-break: break-word;
+    text-align: center;
+    
+}
+#GL_Video_Demo_Header {
+    /* font-size: 1.8rem;
+    position: relative;
+    text-align: center;
+    font-size: calc(1.6vh + 1.6vw); */
+    text-transform: uppercase;
+}
+#GL_Video_Demo_Header::after {
+    border-color: var(--gl-border-color);
+    /* content: '';
+    position: absolute;
+    border-width: 2px;
+    border-style: solid;
+    width: calc(20vw);
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%); */
+}
+#GL_Video_Demo_Types {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-around;
+}
+.GL_Video_Demo_Types_Container {}
+#GL_Video_Demo_Types_CC, #GL_Video_Demo_Types_PM, #GL_Video_Demo_Types_DCA {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+    min-width: 100px;
+    max-width: 150px;
+}
+#GL_Video_Demo_Types_CC{
+    background: var(--demo-bg-circulam-cc-color);
+    border: 1px solid var(--demo-bg-circulam-cc-border-color);
+} 
+#GL_Video_Demo_Types_PM{
+    background: var(--demo-bg-circulam-pm-color);
+    border: 1px solid var(--demo-bg-circulam-pm-border-color);
+} 
+#GL_Video_Demo_Types_DCA {
+    background: var(--demo-bg-circulam-dca-color);
+    border: 1px solid var(--demo-bg-circulam-dca-border-color);
+}
+#GL_Video_Demo_Types_CC > .GL_Video_Demo_Types_Img, #GL_Video_Demo_Types_PM> .GL_Video_Demo_Types_Img, #GL_Video_Demo_Types_DCA > .GL_Video_Demo_Types_Img{
+    width: calc(100% - 20px);
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    outline: none;
+    border: none;
+}
+#GL_Video_Demo_Types_CC > .GL_Video_Demo_Types_Img{
+    /* background-image: url("./Images/curriculum.svg"); */
+} 
+#GL_Video_Demo_Types_PM > .GL_Video_Demo_Types_Img{
+    /* background-image: url("./Images/mentorship.svg"); */
+}
+#GL_Video_Demo_Types_DCA > .GL_Video_Demo_Types_Img{
+    /* background-image: url("./Images/career-assistance.svg"); */
+}
+.GL_Video_Demo_Types_Caption {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    max-width: 150px;
+    word-break: break-word;
+}
+
+/* Cirriculam Styles */
+#GL_Cirriculam {
+    background: var(--cirriculam-bg-color);
+    padding: 4rem var(--gl-common-padding);
+}
+#GL_Cirriculam_Header {
+    /* font-size: 1.8rem;
+    position: relative;
+    text-align: center;
+    font-size: calc(1.6vh + 1.6vw); */
+    text-transform: uppercase;
+}
+#GL_Cirriculam_Header::after {
+    border-color: var(--gl-border-color);
+    /* content: '';
+    position: absolute;
+    border-width: 2px;
+    border-style: solid;
+    width: calc(20vw);
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%); */
+}
+#GL_Cirriculam_Accordion {
+    margin-top: 2rem;
+    margin-left: var(--gl-common-padding);
+    margin-right: var(--gl-common-padding);
+}
+#GL_Cirriculam_Accordion_Tabs {
+    border:2px solid var(--gl-border-gray-color);
+    background: var(--bg-content-white-color);
+}
+.GL_Cirriculam_Accordion_Tab {
+    padding: 16px;
+    border-bottom: 1px solid var(--gl-border-gray-color);
+    cursor: pointer;
+}
+.GL_Cirriculam_Accordion_Tab:hover {
+    transition: .6s;
+    background: var(--cirriculam-accordion-hover-bg-color);
+}
+.GL_Cirriculam__Accordion_Tab_Content {
+    padding: 16px;
+    background: var(--cirriculam-accordion-content-bg-color);
+    display: none;
+    animation: hideTabContent 1s;
+    animation-fill-mode: forwards;
+}
+.GL_Cirriculam__Accordion_Tab_Content--Active {
+    display: block;
+    animation: showTabContent 1s;
+}
+@keyframes hideTabContent {
+    from {display: none !important; }
+    to {display: none !important;}
+}
+@keyframes showTabContent {
+    from {display: none !important;}
+    to {display: block !important;}
+}
+.GL_Cirriculam_Accordion_Tab_Icon {
+    float: right;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* Learning Outcome styles */
+#GL_Outcome {
+    padding: 4rem var(--gl-common-padding);
+    background: var(--demo-bg-color);
+}
+#GL_Outcome_Header {
+    /* font-size: 1.8rem;
+    position: relative;
+    text-align: center;
+    font-size: calc(1.6vh + 1.6vw); */
+    text-transform: uppercase;
+}
+#GL_Outcome_Header::after {
+    border-color: var(--gl-border-color);
+    /* content: '';
+    position: absolute;
+    border-width: 2px;
+    border-style: solid;
+    width: calc(20vw);
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%); */
+}
+#GL_Outcome_Quotes {
+    margin-top: 32px;
+    font-weight: bold;
+}
+#GL_Outcome_Contents {
+
+}
+.GL_Outcome_Contents_Info {
+    display: flex;
+    margin: 32px 0px;
+}
+.GL_Outcome_Contents_Tick_Img {
+    margin: 0% 14px;
+}
+.GL_Outcome_Contents_Txt {
+    font-weight: bold;
+}
+/* #GL_Outcome_Contents_Img {
+    width: 93%;
+    margin: 25px 4%;
+} */
+
+/* Testimonials Styles */
+#GL_Testimonials {
+    margin: 2rem var(--gl-common-padding);
+    background: var(--demo-bg-color);
+    position: relative;
+}
+#GL_Testimonials_Header {
+    /* font-size: 1.8rem;
+    position: relative;
+    text-align: center;
+    font-size: calc(1.6vh + 1.6vw); */
+    text-transform: uppercase;
+}
+#GL_Testimonials_Header::after {
+    border-color: var(--gl-border-color);
+    /* content: '';
+    position: absolute;
+    border-width: 2px;
+    border-style: solid;
+    width: calc(20vw);
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%); */
+}
+#GL_Testimonials_Slides_Shows {
+    margin-left: 10px;
+    margin-right: 10px; 
+    margin-top: 32px;
+    position: relative;
+    height: calc(14rem - 24px);
+}
+.GL_Testimonials_Slides_LeftNav, .GL_Testimonials_Slides_RightNav {
+    cursor: pointer;
+}
+.GL_Testimonials_Slide {
+    opacity: 0;
+    left:0;
+    top: 0;
+    transition: 1s 0.6s ease;
+    position: absolute;
+}
+.GL_Testimonials_Slide--Active {
+    opacity: 1;
+    transition: 1s 0.6s ease;
+}
+.GL_Testimonials_Slide_Quotes { 
+    margin: 2% 0%;
+}
+.GL_Testimonials_Slide_Quotes::before {
+    content: '"';
+    font-family: fantasy;
+}
+.GL_Testimonials_Slide_Quotes::after {
+    content: '"';
+    font-family: fantasy;
+}
+.GL_Testimonials_Slide_QuotesInfo {
+    margin: 2% 0%;
+}
+.GL_Testimonials_Slide_QuotesBy {
+    font-weight: 700;
+}
+.GL_Testimonials_Slide_QuotesOf {
+    font-weight: 700;
+}
+#GL_Testimonials_Slide_Dots {
+    text-align: center;
+}
+.GL_Testimonials_Slide_Dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.GL_Testimonials_Slide_Dot--Active, .GL_Testimonials_Slide_Dot:hover{
+    background-color: var(--testimonial-bots-bg-color);
+}
+
+/* About Styles */
+#GL_About {
+    padding: 4rem var(--gl-common-padding);
+    background: var(--bg-content-white-color);
+}
+#GL_About_Description {
+    font-weight: 500;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 26px;
+    text-align: left;
+}
+
+
+/* This is the footer section styles */
+.GL_Footer {
+    position: fixed;
+    background: var(--footer-bg-color);
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    padding: 0.7rem;
+    display:none;
+}
+.GL_Footer--Active {
+    display: flex;
+    justify-content: center;
+}
+.GL_Footer_Txt {
+    color: var(--gl-text-color);
+}
+
+
+

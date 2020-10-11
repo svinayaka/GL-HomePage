@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Great Learning</title>
+        <meta name="description" content="Great Learning Portal">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./index.css">
+        <link rel='stylesheet' href='mediastyles.css' />
+    </head>
+    <body>
+        <main id="GL_Main" class="GL_Main">
+            <section id="GL_TopLayer">
+                <!-- <img src="./Images/bg.jpg" id="GL_TopLayer_BG"/> -->
+                <div id="GL_TopLayer_BG"></div>
+                <section id="GL_Title">
+                    <section id="GL_Main_Form_Head">
+                        <section id="GL_Main_Form_Header" class="">
+                            <h3 id="GL_Main_Form_HeaderTxt">greatlearning
+                            </h3>
+                            <span id="GL_Main_Form_SubHeaderTxt">Power Ahead</span>
+                        </section>
+                    </section>
+                </section>
+                <section id="GL_Main_Form" class="GL_Main_Form">
+                    <!-- This is for form -->
+                    <section id="GL_Main_Form_Fill" class="GL_Main_Form_Fill">
+                        <h3 id="GL_Main_Form_Fill_Header" class="GL_Common_HeaderStyle">Get Started Now</h3>
+                        <form id="GL_Main_Form_Fill_Contents" name="GL_Apply_Form" onsubmit="submitForm()">
+                            <input class="GL_Main_Form_Fill_Input" name="name" autocomplete="name" tabindex="1" aria-labelledby="Name Field" type="text" value="" placeholder="Name" required/>
+                            <input class="GL_Main_Form_Fill_Input" name="email" autocomplete="email" tabindex="2" aria-labelledby="Email Field" type="email" value="" placeholder="Email" required/>
+                            <input class="GL_Main_Form_Fill_Input" name="mobile" autocomplete="mobile" tabindex="3" aria-labelledby="Mobile Number Field" type="tel" pattern="[0-9]{10}" value="" placeholder="Mobile No - 10 digit number" required/>
+                            <input class="GL_Main_Form_Fill_Input" name="work" autocomplete="work" tabindex="4" aria-labelledby="Work Experience Field" type="text" value="" placeholder="Work Experience" required/>
+                            <input class="GL_Main_Form_Fill_Input" name="organization" autocomplete="organization" tabindex="5" aria-labelledby="Current Organization Field" type="text" value="" placeholder="Current Organization" required/>
+                            <section id="GL_Main_Form_Fill_UserCheck">
+                                <input tabindex="6" id="GL_Main_Form_Fill_Check" type="checkbox"/>
+                                <label for="GL_Main_Form_Fill_Check" id="GL_Main_Form_Fill_CheckLabel">
+                                    I authorize a Great Learning representative to contact me
+                                </label>
+                            </section>
+                            <input class="GL_Button GL_Button--bottomApply GL_Button GL_Button--bottomApply--formApply" type="submit" value="Apply Now"/>
+                        </form>
+                    </section>
+                    <section id="GL_Main_Form_Content" class="GL_Main_Form_Content">
+                        <h3 id="GL_Main_Form_Content_Header">
+                            PG Program in Data Science and Business Analysis
+                        </h3>
+                        <p id="GL_Main_Form_Content_SubHeader">Learn Data Science, Business Analytics with India's #1 course and power ahead in your career</p>
+                        <h3 id="GL_Main_Form_Content_MemberShip">
+                            11 Months Online Mentorship
+                        </h3>
+                    </section>
+                </section>
+            </section>
+            <section id="GL_Video_Demo">
+                <!-- This is for why learn GL -->
+                <h3 id="GL_Video_Demo_Header" class="GL_Common_HeaderStyle">Why Learn from Great Learning</h3>
+                <section id="GL_Video_Demo_Types">
+                    <div class="GL_Video_Demo_Types_Container">
+                        <div id="GL_Video_Demo_Types_CC">
+                            <img class="GL_Video_Demo_Types_Img" src="./Images/curriculum.svg"/>
+                        </div>
+                        <p class="GL_Video_Demo_Types_Caption">Comprehensive Curriculum</p>
+                    </div>
+                    <div class="GL_Video_Demo_Types_Container">
+                        <div id="GL_Video_Demo_Types_PM">
+                            <img class="GL_Video_Demo_Types_Img" src="./Images/mentorship.svg"/>
+                        </div>
+                        <p class="GL_Video_Demo_Types_Caption">Personalised Mentorship</p>
+                    </div>
+                    <div class="GL_Video_Demo_Types_Container">
+                        <div id="GL_Video_Demo_Types_DCA">
+                            <img class="GL_Video_Demo_Types_Img" src="./Images/career-assistance.svg"/>
+                        </div>
+                        <p class="GL_Video_Demo_Types_Caption">Dedicated Career Assitance</p>
+                    </div>
+                </section>
+            </section>
+            <section id="GL_Cirriculam">
+                <!-- This is for circulam part -->
+                <h3 id="GL_Cirriculam_Header">
+                    Curriculum Snapshot
+                </h3>
+                <div id="GL_Cirriculam_Accordion">
+                    <div id="GL_Cirriculam_Accordion_Tabs">
+                        <div class="GL_Cirriculam_Accordion_Tab" onclick="openTabContent(1)">
+                            Introduction to Data Science
+                            <span class="GL_Cirriculam_Accordion_Tab_Icon">+</span>
+                        </div>
+                        <div class="GL_Cirriculam__Accordion_Tab_Content">
+                            Introduction to Data Science content
+                        </div>
+                        <div class="GL_Cirriculam_Accordion_Tab" onclick="openTabContent(2)">
+                            Business Finance
+                            <span class="GL_Cirriculam_Accordion_Tab_Icon">+</span>
+                        </div>
+                        <div class="GL_Cirriculam__Accordion_Tab_Content">
+                            Business Finance content
+                        </div>
+                        <div class="GL_Cirriculam_Accordion_Tab" onclick="openTabContent(3)">
+                            Marketing and CRM
+                            <span class="GL_Cirriculam_Accordion_Tab_Icon">+</span>
+                        </div>
+                        <div class="GL_Cirriculam__Accordion_Tab_Content">
+                            Marketing and CRM content
+                        </div>
+                        <div class="GL_Cirriculam_Accordion_Tab" onclick="openTabContent(4)">
+                            SQL Programming
+                            <span class="GL_Cirriculam_Accordion_Tab_Icon">+</span>
+                        </div>
+                        <div class="GL_Cirriculam__Accordion_Tab_Content">
+                            SQL Programming content
+                        </div>
+                        <div class="GL_Cirriculam_Accordion_Tab" onclick="openTabContent(5)">
+                            Advance Statistics
+                            <span class="GL_Cirriculam_Accordion_Tab_Icon">+</span>
+                        </div>
+                        <div class="GL_Cirriculam__Accordion_Tab_Content">
+                            Advance Statistics content  
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="GL_Outcome">
+                <!-- Learning out come -->
+                <h3 id="GL_Outcome_Header" class="GL_Common_HeaderStyle">
+                    Learning outcome
+                </h3>
+                <p id="GL_Outcome_Quotes">
+                    Acquire a design thinking mindset, so that you can translate your learnings during the course to drive innovation in your company
+                </p>
+                <div id="GL_Outcome_Contents">
+                    <img id="GL_Outcome_Contents_Img" class="GL_Outcome_Contents_Img" src="./Images/laptop.png" />
+                    <div id="GL_Outcome_Contents_Box" class="GL_Outcome_Contents_Box">
+                        <div class="GL_Outcome_Contents_Info">
+                            <img id="GL_Outcome_Contents_Tick_Img" src="./Images/black-tick.svg" class="GL_Outcome_Contents_Tick_Img" /><p class="GL_Outcome_Contents_Txt">Develop viable solutions to user challenges using the design thinking and hypoth</p>
+                        </div>
+                        <div class="GL_Outcome_Contents_Info">
+                            <img id="GL_Outcome_Contents_Tick_Img" src="./Images/black-tick.svg" class="GL_Outcome_Contents_Tick_Img" /><p class="GL_Outcome_Contents_Txt">Develop viable solutions to user challenges using the design thinking and hypoth</p>
+                        </div>
+                        <div class="GL_Outcome_Contents_Info">
+                            <img id="GL_Outcome_Contents_Tick_Img" src="./Images/black-tick.svg" class="GL_Outcome_Contents_Tick_Img" /><p class="GL_Outcome_Contents_Txt">Develop viable solutions to user challenges using the design thinking and hypoth</p>
+                        </div>
+                        <div class="GL_Outcome_Contents_Info">
+                            <img id="GL_Outcome_Contents_Tick_Img" src="./Images/black-tick.svg" class="GL_Outcome_Contents_Tick_Img" /><p class="GL_Outcome_Contents_Txt">Develop viable solutions to user challenges using the design thinking and hypoth</p>
+                        </div>
+                        <div class="GL_Outcome_Contents_Info">
+                            <img id="GL_Outcome_Contents_Tick_Img" src="./Images/black-tick.svg" class="GL_Outcome_Contents_Tick_Img" /><p class="GL_Outcome_Contents_Txt">Develop viable solutions to user challenges using the design thinking and hypoth</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="GL_Testimonials">
+                <!-- Testimonials  -->
+                <h3 id="GL_Testimonials_Header" class="GL_Common_HeaderStyle">
+                    Testimonials
+                </h3>
+                <div id="GL_Testimonials_Slides_Shows">
+                    <div class="GL_Testimonials_Slide GL_Testimonials_Slide--Active" data-val="1">
+                        <p class="GL_Testimonials_Slide_Quotes">Slide 1 - I have already used this on one project at work, and my boss has already asked me to make a similar prototype for another project. I also feel if I ever were to try starting my own company that my chances of success just went up a lot.</p>
+                        <div class="GL_Testimonials_Slide_QuotesInfo">
+                            <p class="GL_Testimonials_Slide_QuotesBy">
+                                - Senior Director, Business Development
+                            </p>
+                            <span class="GL_Testimonials_Slide_QuotesOf">(Software Industry)</span>
+                        </div>
+                    </div>
+                    <div class="GL_Testimonials_Slide" data-val="2">
+                        <p class="GL_Testimonials_Slide_Quotes">Slide 2 - I have already used this on one project at work, and my boss has already asked me to make a similar prototype for another project. I also feel if I ever were to try starting my own company that my chances of success just went up a lot.</p>
+                        <div class="GL_Testimonials_Slide_QuotesInfo">
+                            <p class="GL_Testimonials_Slide_QuotesBy">
+                                - Senior Director, Cheif Technical Officer
+                            </p>
+                            <span class="GL_Testimonials_Slide_QuotesOf">(Manufactor Industry)</span>
+                        </div>
+                    </div>
+                    <div class="GL_Testimonials_Slide" data-val="3">
+                        <p class="GL_Testimonials_Slide_Quotes">Slide 3 - I have already used this on one project at work, and my boss has already asked me to make a similar prototype for another project. I also feel if I ever were to try starting my own company that my chances of success just went up a lot.</p>
+                        <div class="GL_Testimonials_Slide_QuotesInfo">
+                            <p class="GL_Testimonials_Slide_QuotesBy">
+                                - Senior Director, Managing Director
+                            </p>
+                            <span class="GL_Testimonials_Slide_QuotesOf">(Health Care Industry)</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="GL_Testimonials_Slides_LeftNav" class="GL_Testimonials_Slides_LeftNav" onclick="previousSlide()">
+                    <img src="Images/arrow.png" />
+                </div>
+                <div id="GL_Testimonials_Slides_RightNav" class="GL_Testimonials_Slides_RightNav" onclick="nextSlide()">
+                    <img src="Images/arrow.png" />
+                </div>
+                <div id="GL_Testimonials_Slide_Dots" class="GL_Testimonials_Slide_Dots">
+                    <span data-val="1" class="GL_Testimonials_Slide_Dot GL_Testimonials_Slide_Dot--Active" onclick="currentSlide(1)"></span> 
+                    <span data-val="2" class="GL_Testimonials_Slide_Dot" onclick="currentSlide(2)"></span> 
+                    <span data-val="3" class="GL_Testimonials_Slide_Dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </section>
+            <section id="GL_About">
+                <!-- final section -->
+                <p id="GL_About_Description">Great Learning is an Ed-Tech company that offers programs in career critical competencies such as Analytics, Data Science, Artifical Intelligence, Cloud Computing, Cybersecurity, Full Stack Development and much more. Over 10,000 professions have taken Great learning programs and it has already delivered over 5 millions hours of learning.</p>
+            </section>
+        </main>
+        <footer id="GL_Footer" class="GL_Footer">
+            <span class="GL_Footer_Txt">Explore this game changing opportunity</span>
+            <a href="GL_Main_Form_Fill">
+                <input class="GL_Button GL_Button--bottomApply" type="button" value="Apply Now"/>
+            </a>
+        </footer>
+        <script src="./index.js"></script>
+    </body>
+</html>
